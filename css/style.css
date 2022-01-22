@@ -1,0 +1,708 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.homePage{
+    background-color: rgb(247, 241, 241);
+    display: flex;
+}
+
+.menu{
+    height: 625px;
+    width: 240px;
+    background-color: rgb(92, 5, 92);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon{
+    height: 35px;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    display: flex;
+}
+
+.icon img{
+    width: 40px;
+    height: 30px;
+    padding: 6px;
+    position: absolute;
+    border: 1px solid aliceblue;
+    border-radius: 50%;
+}
+
+.icon h1{
+    font-size: 18px;
+    position: absolute;
+    left: 75px;
+    padding: 3px;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 0px 9px black;
+    font-style: italic;
+}
+
+.icon span{
+    color: #8D598C;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 0px 0px 5px black;
+
+}
+
+.profile{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    padding: 20px 10px;
+}
+
+.profile .img{
+    width: 30%;
+}
+
+.profile .img img{
+    width: 100%;
+    border: 3px solid aliceblue;
+    border-radius: 50%;
+}
+
+.profileText{
+    padding: 12px;
+}
+
+.profileText p{
+    color: aliceblue;
+    font-size: 15px;
+}
+
+.profileText h2{
+    color: aliceblue;
+    width: 100%;
+    font-size: 18px;
+}
+
+.general{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    position: relative;
+}
+
+.general h3{
+    font-size: 13px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.buttons{
+    width: 100%;
+    height: 35px;
+    position: relative;
+    display: flex;
+    transition: 0.5s;
+}
+
+.menuOpen .buttons:hover{
+    background-color: rgba(236, 235, 236, 0.288);
+    cursor: pointer;
+}
+
+.iconBtn{
+    padding: 10px;
+    width: auto;
+    transition: 0.4s;
+}
+
+.iconBtn .i{
+    color: aliceblue;
+}
+
+.buttonText{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.buttonText h2{
+    color: aliceblue;
+    font-size: 12px;
+    padding: 12px 2px;
+}
+
+.buttonText .s{
+    font-size: 11px;
+    padding: 14px 20px;
+    color: aliceblue;
+}
+
+.liveON{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.liveON h3{
+    font-size: 13px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.menuFooter{
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 100%;
+    padding: 4px;
+}
+
+.menuFooter .iconBtn:hover{
+    font-size: 20px;
+    background-color: rgba(236, 235, 236, 0.288);
+    cursor: pointer;
+}
+
+.inFooter{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+                                  /* Atalhos */
+
+.contents{
+    width: 82.5%;
+}
+
+.atalhos{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    border-bottom: 1px solid rgb(223, 207, 207);
+    background-color: rgb(248, 236, 236);
+}
+
+.atalhosContainer{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuBarra .m{
+    font-size: 25px;
+    color: rgb(92, 5, 92);
+    transition: 0.5s;
+}
+
+.notify .m{
+    font-size: 25px;
+    padding: 0px 15px;
+    color: rgb(92, 5, 92);
+    transition: 0.5s;
+}
+
+.m:hover{
+    color: rgba(92, 5, 92, 0.363);
+    cursor: pointer;
+}
+
+.window{
+    width: 115px;
+    padding: 10px;
+    height: 45px;
+    display: flex;
+    justify-content: right;
+}
+
+.window .m{
+    font-size: 25px;
+    color: rgb(92, 5, 92);
+    transition: 0.5s;
+}
+
+.window .m:hover{
+    color: rgba(92, 5, 92, 0.363);
+    cursor: pointer;
+}
+
+.statsUser{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.boxUser{
+    height: 100%;
+    text-align: center;
+}
+
+.boxUser .iconStats{
+    color: rgb(92, 5, 92);
+}
+
+.statsUser .box4 span{
+    color: red;
+}
+
+.statsUser .lastNumber{
+    border: none;
+}
+
+.boxUser h3{
+    font-size: 13px;
+    display: inline-block;
+    color: rgb(92, 5, 92);
+    padding-top: 10px;
+}
+
+.boxUser p{
+    color: rgb(92, 5, 92);   
+    font-size: 12px; 
+}
+
+.boxUser span{
+    color: green;
+}
+
+.statsNumber{
+    text-align: center;
+    padding: 0px 45px;
+    border-right: 1px solid rgb(223, 207, 207);
+}
+
+.statsNumber h4{
+    font-size: 45px;
+    color: rgb(92, 5, 92);
+}
+
+.introActivity{
+    background-color: aliceblue;
+    margin: 15px;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 10px rgba(92, 5, 92, 0.288)
+}
+
+.introActivity h2{
+    padding: 2px;
+    font-size: 18px;
+    color: rgb(92, 5, 92);
+}
+
+.introActivity input{
+    margin-right: 40px;
+    padding: 2px;
+    color: rgb(92, 5, 92);
+    border: 1px solid rgb(92, 5, 92);
+}
+
+.graph{
+    display: flex;
+    height: 190px;
+    background-color: aliceblue;
+    margin: 5px 15px;
+    box-shadow: 1px 1px 10px rgba(92, 5, 92, 0.288);
+}
+
+.graphEdit{   
+    margin-left: 25px;
+    height: 100%;
+    width:370px;
+}
+
+.topCampaign{
+    box-shadow: 0px 0px 8px rgba(92, 5, 92, 0.062);
+    margin-left: 48px;
+    width: 250px;
+}
+
+.campaigns{
+    padding: 2px 20px;    
+}
+
+.campBord{
+    border-top: 3px solid rgb(247, 241, 241);
+}
+
+.campaigns p{
+    color: rgb(92, 5, 92);
+    font-size: 15px;
+    padding-bottom: 2px;
+}
+
+.graphCampaign{
+    width: 209px;
+    height: 10px;
+    background-color: rgb(168, 167, 167);
+    position: relative;
+}
+
+.graphCampaign .h2-1{
+    position: absolute;
+    left: 50%;
+    display: inline;
+    font-size: 9px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.graphCampaign .h2-2{
+    position: absolute;
+    left: 50%;
+    display: inline;
+    font-size: 9px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.graphCampaign .h2-3{
+    position: absolute;
+    left: 50%;
+    display: inline;
+    font-size: 9px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.graphCampaign .h2-4{
+    position: absolute;
+    left: 50%;
+    display: inline;
+    font-size: 9px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.dentroCampaign1{
+    width: 90%;
+    height: 100%;
+    background-color: rgb(92, 5, 92);
+}
+
+.dentroCampaign2{
+    width: 75%;
+    height: 100%;
+    background-color: rgb(92, 5, 92);
+}
+
+.dentroCampaign3{
+    width: 48%;
+    height: 100%;
+    background-color: rgb(92, 5, 92);
+}
+
+.dentroCampaign4{
+    width: 64%;
+    height: 100%;
+    background-color: rgb(92, 5, 92);
+}
+
+.actionCamp{
+    width: 350px;
+    height: 100%;
+    margin-left: 48px;
+}
+
+.campContainer{
+    display: flex;
+}
+
+.inputs{
+    border-top: 3px solid rgb(247, 241, 241);
+}
+
+.money{
+    display: flex;
+}
+
+#date{
+    width: 185px;
+}
+
+#pay{
+    width: 75px;
+
+}
+
+.form{
+    padding-top: 10px;
+}
+
+.form input{
+    padding: 5px;
+}
+
+.goForm{
+    text-align: center;
+    margin: auto;
+}
+
+.goForm a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 11px;
+    background-color: rgb(92, 5, 92);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: 0.5s;
+    letter-spacing: 1px;
+}
+
+.goForm a:hover{
+    background-color: rgba(92, 5, 92, 0.658);
+}
+
+                                  /* Status Device */
+
+.status{
+    margin: 15px;
+    display: flex;
+    justify-content: space-between
+}
+
+.statusBox{
+    width: 300px;
+    height: 192px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 10px rgba(92, 5, 92, 0.288)
+}
+
+.statusTitle{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.statusTitle .statusIcons .statusI{
+    font-size: 13px;
+    padding: 0px 2px;
+    color: rgb(92, 5, 92);
+    transition: 0.4s;
+}
+
+.statusIcons .statusI:hover{
+    color: rgba(92, 5, 92, 0.425);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.statusTitle h2{
+    margin-left: 5px;
+    font-size: 15px;
+    color: rgb(92, 5, 92);
+}
+
+.statusSubtitle{
+    padding: 2px;
+}
+
+.statusSubtitle p{
+    width: 90%;
+    border-top: 3px solid rgb(247, 241, 241);
+    margin-left: 10px;
+    font-size: 13px;
+    color: rgb(92, 5, 92);
+}
+
+.statusContents{
+    display: flex;
+    padding: 8px;
+}
+
+.contentsDevice{
+    border-top: 3px solid rgb(247, 241, 241);
+    width: 95%;
+}
+
+.statusContents{
+    display: flex;
+    margin-left: 5px;
+    color: rgb(92, 5, 92);
+}
+
+.statusBox .statusContents p{
+    font-size: 15px;
+}
+
+.statusContents .graphStatus{
+    margin: 0px 20px;
+    width: 140px;
+    height: 15px;
+    background-color: rgb(168, 167, 167);
+    position: relative;
+}
+
+.graphStatus .h2{
+    position: absolute;
+    left: 50%;
+    display: inline;
+    font-size: 13px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.graphStatus .h2-1{
+    position: absolute;
+    left: 50%;
+    display: inline;
+    font-size: 13px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.graphStatus .h2-2{
+    position: absolute;
+    left: 50%;
+    display: inline;
+    font-size: 13px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.graphStatus .h2-3{
+    position: absolute;
+    left: 50%;
+    display: inline;
+    font-size: 13px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.statusContents .graphPorcent{
+    background-color: rgb(92, 5, 92);
+    height: 100%;
+    width: 67%;
+}
+
+.statusContents .gp1{
+    background-color: rgb(92, 5, 92);
+    height: 100%;
+    width: 48%;
+}
+
+.statusContents .gp2{
+    background-color: rgb(92, 5, 92);
+    height: 100%;
+    width: 25%;
+}
+
+.statusContents .gp3{
+    background-color: rgb(92, 5, 92);
+    height: 100%;
+    width: 9%;
+}
+
+.graficoR{
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+    border: 20px solid rgb(168, 167, 167);
+    border-radius: 50%;
+    border-top: 20px solid royalblue;
+    border-right: 20px solid rgb(92, 5, 92);
+    border-bottom: 20px solid grey;
+    border-left: 20px solid green;
+}
+
+.dentroDevice{
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.dentroDevice p{
+    margin-left: 5px;
+}
+
+.cels{
+    display: flex;
+    padding: 3px;
+}
+
+.cels p{
+    font-size: 13px;
+}
+
+.sqr1{
+    color: royalblue;
+}
+
+.sqr2{
+    color: rgb(92, 5, 92);
+}
+
+.sqr3{
+    color: rgb(168, 167, 167);
+}
+
+.sqr4{
+    color: green;
+}
+
+.dentroProgress{
+    margin-top: 15px;
+    padding: 5px;
+    margin-left: 12px;
+}
+
+.contentsDevice{
+    border-top: 3px solid rgb(247, 241, 241);
+    width: 95%;
+}
+
+.atalhosContents{
+    display: flex;
+    padding: 7px;
+    transition: 0.3s;
+    margin-bottom: 4px;
+}
+
+.atalhosContents:hover{
+    background-color: rgba(92, 5, 92, 0.096);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.atalhosContents .quickI{
+    color: rgb(92, 5, 92);
+    padding-right: 10px;
+}
+
+.quickProfile{
+    margin-top: -15px;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-left:10px;
+}
+
+.quickProfile h2{
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 8px;
+    color: rgb(92, 5, 92);
+}
+
+.profileGraph{
+    margin: auto;
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px rgba(92, 5, 92, 0.719);
+}
+
+.profileGraph img{
+    width: 100%;
+}
+
+.quickProfile p{
+    font-size: 12px;
+    padding: 5px;
+}
